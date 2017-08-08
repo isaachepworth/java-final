@@ -234,7 +234,7 @@ public class JavaFinal extends Application {
 			addScore += checkScore(checkLeft());
 			if (addScore >= 300) {
 				players[currentPlayer].addToScore(addScore);
-				score[currentPlayer].setText(players[currentPlayer].getName() + ": " + String.valueOf(players[currentPlayer].getScore()));
+				score[currentPlayer].setText(players[currentPlayer].getString());
 				playerScore = 0;
 				addScore = 0;
 				if (players[currentPlayer].getScore() >= goalScore) {
@@ -503,7 +503,7 @@ public class JavaFinal extends Application {
 	}
 	
 	public void changePlayer() {
-		if(currentPlayer < maxPlayers) {
+		if((currentPlayer + 1) < maxPlayers) {
 			currentPlayer ++;
 		}else {
 			currentPlayer = 0;
