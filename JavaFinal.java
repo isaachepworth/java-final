@@ -220,6 +220,7 @@ public class JavaFinal extends Application {
 					addScore = 0;
 					changePlayer();
 					resetButtons();
+					rollDice();
 					info.setText(players[currentPlayer].getName() + " turn");
 					possibleScore.setText(String.valueOf(0));
 					note = "you Zilched player " + players[currentPlayer].getName() + " turn";

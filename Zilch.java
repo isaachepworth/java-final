@@ -32,4 +32,8 @@ class Zilch extends Player {
 	public void resetScore() {
 		score = 0;
 	}
+	
+	public String getString() {
+		return getName() + ": " + score;
+	}
 }
